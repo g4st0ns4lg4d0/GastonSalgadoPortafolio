@@ -1,0 +1,26 @@
+{% load static %}
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B1220">
+  <title>{{ site_config.seo_title|default:"Gastón Salgado · Tecnología y formación" }}</title>
+  <meta name="description" content="{{ site_config.seo_description|default:'Docencia TI, desarrollo de software y capacitación tecnológica en Chile.' }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:title" content="{{ site_config.seo_title|default:'Gastón Salgado · Tecnología y formación' }}">
+  <meta property="og:description" content="{{ site_config.seo_description }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="{% static 'img/favicon.svg' %}" type="image/svg+xml">
+  <link rel="stylesheet" href="{% static 'css/site.css' %}">
+  <script src="{% static 'js/site.js' %}" defer></script>
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+  {% block content %}{% endblock %}
+  {% block scripts %}{% endblock %}
+</body>
+</html>

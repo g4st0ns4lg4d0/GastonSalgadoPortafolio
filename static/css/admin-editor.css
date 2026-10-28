@@ -1,0 +1,6 @@
+.markdown-editor {display:flex;flex-direction:column;gap:.4rem;max-width:60rem}
+.markdown-toolbar {display:flex;gap:.35rem;flex-wrap:wrap}
+.markdown-toolbar[hidden] {display:none}
+.markdown-toolbar button {background:var(--darkened-bg,#f1f5f9);border:1px solid var(--border-color,#cbd5e1);border-radius:4px;padding:.4rem .7rem;color:var(--body-fg,#0b1220);cursor:pointer}
+.markdown-toolbar button:focus-visible {outline:3px solid #2563eb;outline-offset:2px}
+.markdown-editor textarea {width:min(52rem,100%);box-sizing:border-box;min-height:8rem}
