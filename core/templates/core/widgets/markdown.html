@@ -1,0 +1,11 @@
+<div class="markdown-editor">
+  <div class="markdown-toolbar" aria-label="Formato de texto" hidden>
+    <button type="button" data-format="strong" title="Negrita"><strong>Negrita</strong></button>
+    <button type="button" data-format="em" title="Cursiva"><em>Cursiva</em></button>
+    <button type="button" data-format="list">Lista</button>
+    <button type="button" data-format="heading">Subtítulo</button>
+    <button type="button" data-format="link">Enlace</button>
+  </div>
+  {% include "django/forms/widgets/textarea.html" %}
+  <p class="help">Selecciona texto y aplica formato. Se admite Markdown; el HTML se filtra al publicar.</p>
+</div>
